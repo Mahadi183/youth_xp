@@ -1,0 +1,769 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/bootstrap.css" >
+    <link rel="icon" href="favicon/favicon.ico" type="image/x-icon"/>
+    <!-- <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous"> -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link href="css/style.css" rel="stylesheet">
+    <title>youth xp</title>
+    
+</head>
+<body>
+    <!--  Header Section start  -->
+    <section>
+        
+        <div class="header_section conatiner">
+           
+            <nav class="navbar navbar-expand-lg align-items-center navbar-light header_top">
+                <div class="container-fluid">
+                    <div class="d-flex">
+                        <div>
+                            <img src="assets/images/logo.PNG" alt="logo" />
+                        </div>
+                        <div class="age_info">
+                        <div class="age_info_inner">
+                            <a href="#">
+                            <h5>Ages</h5>
+                            <h4>15-24</h4>
+                            </a>
+                        </div>
+                    </div>
+                    </div>
+                  <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                  </button>
+                  <div class="collapse navbar-collapse header_top_navbar" id="navbarNavDropdown">
+                    <ul class="navbar-nav">
+                      <li class="nav-item m-2">
+                        <a class="nav-link active" aria-current="page" href="#">Find youth jobs</a>
+                      </li>
+                      <li class="nav-item m-2">
+                        <a class="nav-link" href="#">Features</a>
+                      </li>
+                      <li class="nav-item m-2">
+                        <a class="nav-link" href="#">Build your resume kit</a>
+                      </li>
+                      <li class="nav-item m-2">
+                        <a class="nav-link" href="#">Register</a>
+                      </li>
+                      <li class="nav-item m-1">
+                        <a class="nav-link" href="#">Login</a>
+                      </li>
+                      <li class="nav-item dropdown m-2">
+                        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                           Link 
+                        </a>
+                        <ul class="dropdown-menu header_top_dropdown" aria-labelledby="navbarDropdownMenuLink">
+                          <li><a class="dropdown-item" href="#">Our Mission & Culture </a></li>
+                          <li><a class="dropdown-item" href="#">You&2</a></li>
+                          <li><a class="dropdown-item" href="#">Frequently Asked Questions</a></li>
+                          <li><a class="dropdown-item" href="#">Blogs</a></li>
+                          <li><a class="dropdown-item" href="#">Contact Us & Support</a></li>
+                        </ul>
+                      </li>
+                      <li class="nav-item employer_btn m-2">
+                        <a class="nav-link" href="#">Employers ></a>
+                      </li>
+                    </ul>
+                  </div>
+                </div>
+              </nav>
+
+            <div class="job_search">
+                <ul class="nav nav-tabs" role="tablist">
+                    <li class="nav-item">
+                      <a class="nav-link active" data-bs-toggle="tab" href="#home">All</a>
+                    </li>
+                    <li class="nav-item">
+                      <a class="nav-link" data-bs-toggle="tab" href="#">Casual</a>
+                    </li>
+                    <li class="nav-item">
+                      <a class="nav-link" data-bs-toggle="tab" href="#">Part Time</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" data-bs-toggle="tab" href="#">Full Time</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" data-bs-toggle="tab" href="#">Startups</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" data-bs-toggle="tab" href="#">Freelance</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" data-bs-toggle="tab" href="#">Volunteership</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" data-bs-toggle="tab" href="#">Apprenticeships</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" data-bs-toggle="tab" href="#">Internships</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" data-bs-toggle="tab" href="#">Contract</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" data-bs-toggle="tab" href="#">Recently Added</a>
+                    </li>
+                  </ul>
+                
+                  <!-- Tab panes -->
+                  <div class="tab-content filter_tab_content">
+                    <div class="row filter_search_container">
+                        <div id="home" class="col-lg-6 col-md-6 col-sm-6 container tab-pane active"><br>
+                            <input 
+                            name="search" 
+                            type="text" 
+                            id="filterSerach" 
+                            class="form-control filter_search_input" 
+                            placeholder="Search jobs by company or keyword"
+                            value="" 
+                            tabindex="1001">
+                        </div>
+                        
+                        <div class="col-lg-3  col-md-3 col-sm-3 selected_data"  tabindex="1002">
+                            <li class="nav-item dropdown">
+                                <a onclick="myFunction()" class="nav-link dropdown-toggle dropbtn job_space"   href="#" id="navbarDropdownMenuLink" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                                  Job Space
+                                </a>
+                                <ul id="myDropdown" class="dropdown-menu dropdown-content" aria-labelledby="navbarDropdownMenuLink">
+                                    <input onkeyup="filterFunction()" type="text" class="dropdown-item form-control dropdown_input" id="myInput">
+                                  <li>
+                                    <a class="dropdown-item" href="#">
+                                      <input type="checkbox" value="Vejle" name="city" />Accounting</a>
+                                  </li>
+                                  <li>
+                                    <a class="dropdown-item" href="#">
+                                      <input type="checkbox" value="Vejle" name="city" />bdministritive & Office support</a>
+                                  </li>
+                                  <li>
+                                    <a class="dropdown-item" href="#">
+                                      <input type="checkbox" value="Vejle" name="city" />Advertising, Arts & Media</a>
+                                  </li>
+
+                                  <li>
+                                    <a class="dropdown-item" href="#">
+                                      <input type="checkbox" value="Vejle" name="city" />Banking & Financial Support</a>
+                                  </li>
+                                  <li>
+                                    <a class="dropdown-item" href="#">
+                                      <input type="checkbox" value="Vejle" name="city" />Call Center & Customer Service</a>
+                                  </li>
+                                  <li>
+                                    <a class="dropdown-item" href="#">
+                                      <input type="checkbox" value="Vejle" name="city" />Community Service & Development</a>
+                                  </li>
+                                 
+                                </ul>
+                              </li>
+                              
+                        </div>
+
+                        <div class="col-lg-3 col-md-3 col-sm-3 select_input_block">
+                            <input type="text" class="enter_locaton form-control search_option filter_search_input ui-autocomplete-input" name="location" placeholder="Location" autocomplete="off" value="" tabindex="1003">
+
+                                <div class="location_remove_block">
+                                </div>
+
+                        </div>
+                </div>
+                  </div>
+            </div>
+
+              <div class="popular_search">
+                <p style="color: #fff;">popular searches for your lifestyle</p>
+              </div>
+              
+              <div class="popular_search_list">
+                <ul>
+                     <li>
+                        <a href="#">
+                            <span>
+                                <img class=" ls-is-cached lazyloaded" src="assets/images/tag_icon_1.png" alt="Weekend Jobs" width="14" height="14">
+                            </span>Weekend Jobs
+                        </a>
+                   </li>
+                    
+                <li>
+                    <a href="#">
+                        <span>
+                        <img class=" ls-is-cached lazyloaded"
+                          alt="Casual Jobs" width="14" height="14" 
+                          src="assets/images/tag_icon_1.png">
+                        </span>Casual Jobs</a>
+                </li>
+                <li>
+                    <a href="#">
+                        <span>
+                            <img class=" ls-is-cached lazyloaded"
+                              alt="Remote Jobs for Youth" width="14" height="14" 
+                              src="assets/images/tag_icon_1.png">
+                        </span>Remote Jobs
+                    </a>
+                </li>
+                      
+                <li>
+                    <a href="#">
+                        <span>
+                            <img class=" ls-is-cached lazyloaded"
+                              alt="After School Jobs for Youth" 
+                              width="14" 
+                              height="14" 
+                              src="assets/images/tag_icon_1.png">
+                        </span>After School Jobs
+                    </a>
+                </li>
+                <li>
+                    <a href="#">
+                        <span>
+                            <img class=" ls-is-cached lazyloaded"
+                              alt="Night Jobs for Youth" width="14" height="14" 
+                              src="assets/images/tag_icon_1.png">
+                            </span>Night Jobs
+                    </a>
+                </li>
+                 <li>
+                    <a href="#">
+                        <span>
+                            <img class=" ls-is-cached lazyloaded" 
+                         alt="Full Time Jobs for Youth" width="14" height="14" 
+                         src="assets/images/tag_icon_1.png">
+                        </span>Full Time Jobs
+                    </a>
+                </li>
+                <li>
+                    <a href="#">
+                        <span>
+                            <img class=" ls-is-cached lazyloaded"
+                         alt="Startup Jobs for Youth" width="14" height="14"
+                         src="assets/images/tag_icon_1.png">
+                        </span>Startup Jobs
+                    </a>
+                </li>
+                 </ul>
+            </div>
+              <!-- <div class="header_bottom_bg">
+                <img class="img-fluid" src="assets/images/header_bottom_bg.png" height="220"/>
+            </div> -->
+        </div>
+    </section>
+
+    <!-- Header section end -->
+
+    <!-- Schedule Section Start -->
+
+    <section>
+        <div class="container">
+            <div class="row youth_xp_schedule mb-2 p-2">
+                <div class="col-lg-6 col-md-6 col-sm-12 ">
+                    <div class="embed-responsive box_shadow embed-responsive-16by9">
+                        <video class="embed-responsive-item" src="assets/images/video.webm" autoplay loop muted playsinline></video>
+                    </div>
+                </div>
+                
+                <div class="col-lg-6 col-md-6 col-sm-12">
+                
+                        <h1 class="heading_sc">Add your own Availability</h1>
+                        <p class="common_p">Add in your own availability to your profile so Employers can 
+                        see when you are available to work. Employers can search by 
+                        availability in the Employee search area so it's important you fill 
+                        out this field to capture as much attention as possible.
+                        Change your hours to suit you, regularly hop in to adjust your
+                        hours to fit in with your lifestyle and start finding jobs for youth today.
+                        </p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Schedule Section End -->
+
+    <!-- Resume Builder Section start -->
+
+    <section>
+        <diV class="container">
+        <div class="row p-2 resume_builder_sc">
+            <div class="col-lg-6 col-md-6 col-sm-12">
+                <div class="jobs_info_single font-height-0">
+                    <h1 class="heading_sc">Build Your Resume Kit</h1>
+                </div>
+                <div>
+                    <p class="common_p">Create your own Resumé using our specially designed Kit,
+                        just for people between 15-24. 
+                        Our Kit ensures you add the info  that Employers are looking for.
+                        We are consistently working with Employers to refine this process 
+                        to give you the best opportunity.
+                    </p>
+                </div>
+                <div>
+                    <p class="common_p">Our unique Kit will ask you important questions
+                        that aren't often  seen in Resumés to help you stand out,
+                        such as 'What matters to you?'' or 'What are your goals?'. 
+                        This will also help the Employer get to know you better!
+                    </p>
+                </div>
+    
+            </div>
+
+            <div class="col-lg-6 col-md-6 col-sm-12  box_shadow2">
+                <img class="img-fluid" src="assets/images/photo-3.png" alt="job-info" />
+            </div>
+            </div>
+        </diV>
+    </section>
+
+    <!-- Resume Builder Section End  -->
+
+   <!-- Card Section Start -->
+
+    <section class="card_section">
+        <div class="container">
+        <div class="card_section_top">
+            <h4>Our Latest jobs for Youth</h4>
+            <h1>Featured Jobs</h1>
+        </div>
+        
+            <div class="row row-cols-1 row-cols-md-2 row-cols-lg-3 g-4">
+            <div class="col">
+              <div class="card card-single mt-5">
+                <a class="btn btn-dark apply-button">Apply Now</a>
+                <div class="row mt-5">
+                    <div class="col-lg-3 col-md-3 col-sm-3 col-xs-3">
+                        <img src="assets/images/fj1.jpg" class="img-fluid card-img-top" width="70px" height="70px" alt="...">
+                    </div>
+                    <div class="col-lg-9 col-md-9 col-sm-9 col-xs-9">
+                        <div class="card-body">
+                            <h5 class="card-title">FusedMedia</h5>
+                            <h2 class="card-text"> Caringbah, NEW 2299</h2>
+                        </div>
+                    </div>
+                    
+                </div>
+                <div class="save-job">
+                    <h2 class="custom_heading_h2">Receptionist</h2>
+                    <p class="custom_p">Casual: on site/remote</p>
+                    <h5 class="custom_heading_h5">$TBA/hour</h5>
+                </div>
+                <div class="row">
+                    <div class="col-lg-8 col-md-8 col-sm-10 save-job">
+                        <img title="save this job" src="assets/images/heart_unfill.svg" />
+                    </div>
+                    <div class="col-lg-4 col-md-4 col-sm-2 job-post-day">
+                        13 Day's ago
+                    </div>
+                </div>  
+              </div>
+            </div> 
+
+            <div class="col">
+                <div class="card card-single mt-5">
+                  <a class="btn btn-dark apply-button">Apply Now</a>
+                  <div class="row mt-5">
+                      <div class="col-lg-3 col-md-3 col-sm-3 col-xs-3">
+                          <img src="assets/images/fj2.webp" class="img-fluid card-img-top" width="70px" height="70px" alt="...">
+                      </div>
+                      <div class="col-lg-9 col-md-9 col-sm-9 col-xs-9">
+                          <div class="card-body">
+                              <h5 class="card-title">Allcott Hire</h5>
+                              <h2 class="card-text"> Woodridge, NEW 2299</h2>
+                          </div>
+                      </div>     
+                  </div>
+                  <div class="save-job">
+                      <h2 class="custom_heading_h2">Receptionist</h2>
+                      <p class="custom_p">Casual: on site/remote</p>
+                      <h5 class="custom_heading_h5">$TBA/hour</h5>
+                  </div>
+                  <div class="row">
+                      <div class="col-lg-8 col-md-8 col-sm-10 save-job">
+                          <img title="save this job" src="assets/images/heart_unfill.svg" />
+                      </div>
+                      <div class="col-lg-4 col-md-4 col-sm-2 job-post-day">
+                          13 Day's ago
+                      </div>
+                  </div>    
+                </div>
+              </div>
+
+              <div class="col">
+                <div class="card card-single mt-5">
+                  <a class="btn btn-dark apply-button">Apply Now</a>
+                  <div class="row mt-5">
+                      <div class="col-lg-3 col-md-3 col-sm-3 col-xs-3">
+                          <img src="assets/images/fj3.webp" class="img-fluid card-img-top" width="70px" height="70px" alt="...">
+                      </div>
+                      <div class="col-lg-9 col-md-9 col-sm-9 col-xs-9">
+                          <div class="card-body">
+                              <h5 class="card-title">Your Sydney Celebrant</h5>
+                              <h2 class="card-text"> Caringbah, NEW 2299</h2>
+                          </div>
+                      </div>
+                      
+                  </div>
+                  <div class="save-job">
+                      <h2 class="custom_heading_h2">Receptionist</h2>
+                      <p class="custom_p">Casual: on site/remote</p>
+                      <h5 class="custom_heading_h5">$TBA/hour</h5>
+                  </div>
+                  <div class="row">
+                      <div class="col-lg-8 col-md-8 col-sm-10 save-job">
+                          <img title="save this job" src="assets/images/heart_unfill.svg" />
+                      </div>
+                      <div class="col-lg-4 col-md-4 col-sm-2 job-post-day">
+                          13 Day's ago
+                      </div>
+                  </div>   
+                </div>
+              </div>
+
+              <div class="col">
+                <div class="card card-single mt-5">
+                  <a class="btn btn-dark apply-button">Apply Now</a>
+                  <div class="row mt-5">
+                      <div class="col-lg-3 col-md-3 col-sm-3 col-xs-3">
+                          <img src="assets/images/fj4.webp" class="img-fluid card-img-top" width="70px" height="70px" alt="...">
+                      </div>
+                      <div class="col-lg-9 col-md-9 col-sm-9 col-xs-9">
+                          <div class="card-body">
+                              <h5 class="card-title">Fused Media</h5>
+                              <h2 class="card-text"> Caringbah, NEW 2299</h2>
+                           </div>
+                      </div>    
+                  </div>
+                  <div class="save-job">
+                      <h2 class="custom_heading_h2">Receptionist</h2>
+                      <p class="custom_p">Casual: on site/remote</p>
+                      <h5 class="custom_heading_h5">$TBA/hour</h5>
+                  </div>
+                  <div class="row">
+                      <div class="col-lg-8 col-md-8 col-sm-10 save-job">
+                          <img title="save this job" src="assets/images/heart_unfill.svg" />
+                      </div>
+                      <div class="col-lg-4 col-md-4 col-sm-2 job-post-day">
+                          13 Day's ago
+                      </div>
+                  </div>   
+                </div>
+              </div>
+
+              <div class="col">
+                <div class="card card-single mt-5">
+                  <a class="btn btn-dark apply-button">Apply Now</a>
+                  <div class="row mt-5">
+                      <div class="col-lg-3 col-md-3 col-sm-3 col-xs-3">
+                          <img src="assets/images/fj5.webp" class="img-fluid card-img-top" width="70px" height="70px" alt="...">
+                      </div>
+                      <div class="col-lg-9 col-md-9 col-sm-9 col-xs-9">
+                          <div class="card-body">
+                              <h5 class="card-title">Youth Xp</h5>
+                              <h2 class="card-text"> Caringbah, NEW 2299</h2>
+                          </div>
+                      </div>     
+                  </div>
+
+                  <div class="save-job">
+                      <h2 class="custom_heading_h2">Receptionist</h2>
+                      <p class="custom_p">Casual: on site/remote</p>
+                      <h5 class="custom_heading_h5">$TBA/hour</h5>
+                  </div>
+                  <div class="row">
+                      <div class="col-lg-8 col-md-8 col-sm-10 save-job">
+                          <img title="save this job" src="assets/images/heart_unfill.svg" />
+                      </div>
+                      <div class="col-lg-4 col-md-4 col-sm-2 job-post-day">
+                          13 Day's ago
+                      </div>
+                  </div> 
+                </div>
+              </div>
+
+             <div class="col card_last">
+                <div class="mt-5">
+                  <div class="row mt-5">
+                      <div class="col-lg-6 col-md-6 col-sm-6">
+                          <h2>View All latest Jobs</h2>
+                      </div>
+                      <div class="col-lg-6 col-md-6 col-sm-6">
+                          <div class="card-body">
+                              <a class="btn btn-dark">></a>
+                          </div>
+                      </div>
+                      
+                    </div> 
+                </div>
+              </div>
+          
+            
+            </div> 
+            <!-- <div class="white_curve">
+                <img src="assets/images/white_curve.png" height="212"/>
+            </div> -->
+          
+        </div> 
+    </section>
+
+    <!-- Card Section End -->
+
+    <!-- Features Section Start  -->
+
+    <section>
+        <div class="container">
+        <div class="row jobs_info mb-5">
+            
+            <div class="col-lg-6 col-md-6 col-sm-12">
+                <div class="jobs_info_single  font-height-0">
+                    <h2>Jobs for <img class="lazyload" src="assets/images/black_logo.svg" alt="black-logo" width="113" height="39"></h2>
+                </div>
+                
+                <div class="jobs_info_single2 active" itmid="1">
+                    <a href="#">
+                        <h3>Reverse the Job Hunt</h3>
+                        <p>Employers are searching for aspiring new potential in 15-24 year olds today on YouthXP. Find a job for youth and start a career today in the industry you want with our help.</p>
+                    </a>
+                </div>
+                
+                <div class="jobs_info_single2 " itmid="2">
+                    <a href="#">
+                        <h3>Let Employers know what actually matters</h3>
+                        <p>What matters to you in your workplace? What traits are you looking for in an employer. Let them know!</p>
+                    </a>
+                </div>
+                
+                <div class="jobs_info_single2 " itmid="4">
+                    <a href="#">
+                        <h3>Introducing a new type of Resumé</h3>
+                        <p>With an easy-to-use Resumé Kit, keeping your Resumé up to date and staying in the talent pool of Employers is easier than ever.</p>
+                    </a>
+                </div>
+                
+                <div class="jobs_info_bottom jobs_info_single">
+                    <a href="#" class="lern_btn">More Features ></a>
+                </div>
+            </div>
+
+            <div class="col-lg-6 col-md-6 col-sm-12">
+                <img class="img-fluid" width="1000" height="667" src="assets/images/photo-2.jpg" alt="job-info" />
+            </div>
+        </div>
+    </div>
+    </section>
+
+    <!-- Feature section End  -->
+
+    <!-- Social Section Start -->
+
+    <section class="row youth_xp_social_section">
+<!-- 
+        <div class="sec_bg_img">
+            <img class=" lazyloaded" src="assets/images/social_section_bg.jpg" >
+        </div> -->
+        <div class="col-lg-6 col-md-6 col-sm-12 social_section_left">
+            <h1 class="social_heading">Let's Get Social</h1>
+        </div>
+        <div class="col-lg-6 col-md-6 col-sm-12 social_section_right">
+            <ul class="row">
+                <li class="col-lg-4 col-md-4 col-sm-4">
+                    <a>
+                        <img src="assets/images/sc_1.svg" />
+                    </a>
+                </li>
+                <li class="col-lg-4 col-md-4 col-sm-4">
+                    <a>
+                        <img src="assets/images/sc_2.svg" />
+                    </a>
+                </li>
+                <li class="col-lg-4 col-md-4 col-sm-4">
+                    <a>
+                        <img src="assets/images/sc_3.svg" />
+                    </a>
+                </li>
+                <li class="col-lg-4 col-md-4 col-sm-4">
+                    <a>
+                        <img src="assets/images/sc_2.svg" />
+                    </a>
+                </li>
+            </ul>
+        </div>
+    </section>
+
+    <!-- Social Section End -->
+    <!-- Job Section Start -->
+
+    <section class="row youth_xp_job_section mb-2">
+        <div class="col-lg-6 col-md-6 sol-sm-12 ">
+            <img class="img-fluid left_image" src="assets/images/photo-1.png" width="960" height="378" alt="job-section"/>       
+        </div>
+        
+        <div class="col-lg-6 col-md-6 sol-sm-12  job_section_inner p-5">
+            <div>
+                <h2>Want smashed avo for breakfast?</h2>
+                <h3>Get a job on YouthXP.</h3>
+                <div class="signup_btn">
+                    <a href="#" class="signup_btn_link">Signup to Find Jobs for Youth ></a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Job Section End -->
+
+    <!-- Footer Section Start -->
+
+     <section class="footer">
+        <div class="container">
+             <div class="row">
+                <div class="col-lg-3 col-md-6 col-xs-12 footer_column">
+                    <h3>Explore Jobs</h3>
+                    <ul>
+                        <li>
+                            <a href="#">Find Jobs For Youth</a>
+                        </li>
+                        <li>
+                            <a href="#">After School Jobs For Youth</a>
+                        </li>
+                        <li>
+                            <a href="#">Weekend Jobs For Youth</a>
+                        </li>
+                        <li>
+                            <a href="#">Full Time Jobs For Youth</a>
+                        </li>
+                        <li>
+                            <a href="#">Startup Jobs For Youth</a>
+                        </li>
+                        <li>
+                            <a href="#">Casual Jobs For Youth</a>
+                        </li>
+                        <li>
+                            <a href="#">Night Jobs For Youth</a>
+                        </li>
+                        <li>
+                            <a href="#">Remote Jobs For Youth</a>
+                        </li>
+                    </ul>
+                </div>
+                
+                <div class="col-lg-2 col-md-6 col-xs-12 footer_column">
+                    <h3>Job Seekers</h3>
+                    <ul>
+                        <li>
+                            <a href="#">Login</a>
+                        </li>
+                        <li>
+                            <a href="#">Sign Up</a>
+                        </li>
+                        <li>
+                            <a href="#">Build your Resume Kit</a>
+                        </li>
+                        <li>
+                            <a href="#">Features</a>
+                        </li>
+                        <li>
+                            <a href="#">Applied Jobs</a>
+                        </li>
+                        <li>
+                            <a href="#">Your Availbility</a>
+                        </li>
+                        <li>
+                            <a href="#">Frequently Asked Questions</a>
+                        </li>
+                    </ul>
+                </div>
+                        
+                <div class="col-lg-2 col-md-6 col-xs-12 footer_column">
+                    <h3>Employers</h3>
+                    <ul>
+                        <li>
+                            <a href="#">Sign Up</a>
+                        </li>
+                        <li>
+                            <a href="#">Login</a>
+                        </li>
+                        <li>
+                            <a href="#">Features</a>
+                        </li>
+                        <li>
+                            <a href="#">Pricing</a>
+                        </li>
+                        <li>
+                            <a href="#">Post a Job</a>
+                        </li>
+                        <li>
+                            <a href="#">Talent Pool Search</a>
+                        </li>
+                        <li>
+                            <a href="#">Frequently Asked Questions</a>
+                        </li>
+                    </ul>       
+                </div>  
+                <div class="col-lg-2 col-md-6 col-xs-12 footer_column">
+                    <h3>Resources</h3>
+                    <ul>
+                        <li>
+                            <a href="#">Contact Us</a>
+                        </li>
+                        <li>
+                            <a href="#">Sales</a>
+                        </li>
+                        <li>
+                            <a href="#">Support</a>
+                        </li>
+                        <li>
+                            <a href="#">Press</a>
+                        </li>
+                        <li>
+                            <a href="#">Blog Posts</a>
+                        </li>
+                        <li>
+                             <a href="#">Trademark and Use of Logo</a>
+                        </li>
+                        <li>
+                            <a href="#">Privacy Policy</a>
+                        </li>
+                        <li>
+                            <a href="#">Terms of Use</a>
+                        </li>
+                    </ul>
+                </div>
+
+                <div class="col-lg-3 col-md-6 col-xs-12">         
+                    <img src="assets/images/flag.svg" alt="flag" />                
+                </div>
+                        
+            </div>
+                    
+        </div>
+    </section>
+
+    <!-- Footer Section End -->
+
+    <script>
+        
+        function myFunction() {
+          document.getElementById("myDropdown").classList.toggle("show");
+        }
+        
+        function filterFunction() {
+          var input, filter, ul, li, a, i;
+          input = document.getElementById("myInput");
+          filter = input.value.toUpperCase();
+          div = document.getElementById("myDropdown");
+          a = div.getElementsByTagName("a");
+          for (i = 0; i < a.length; i++) {
+            txtValue = a[i].textContent || a[i].innerText;
+            if (txtValue.toUpperCase().indexOf(filter) > -1) {
+              a[i].style.display = "";
+            } else {
+              a[i].style.display = "none";
+            }
+          }
+        }
+        </script>
+    
+    
+    <!-- <script type="text/javascript" src="js/bootstrap.js"></script> -->
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+</body>
+</html>
